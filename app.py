@@ -2,7 +2,7 @@
 Program: app.py for Flask Server
 Purpose: Main app for running Flask server for AI based APIs
 Author: 
-       - Sharad Varshney sharad.varshney@gmail.com
+       - Sharad Varshney sharad.varshney@gmail 
        - Jatin Sharma    email
        - xxx             email
 """
@@ -109,7 +109,7 @@ def search():
     #final_result = document_similarity.Document_Similarity().getSimilarityRanking(query, toJSON(results))
 
     #return toJSON(query)
-    return documentDF.to_json()
+    return documentDF.to_json(orient='records')
 
 def process_request_for_custom_idf(terms):
     query = intercept.Intercept().process_request(terms)
@@ -137,7 +137,7 @@ if __name__ == '__main__':
                         default="info")
     parser.add_argument("-p", "--port", help="Log level",
                         type=int,
-                        default=8080)
+                        default=4004)
     parser.add_argument("-e", "--env", help="Env of the dir",
                         type=str,
                         default="dev")
