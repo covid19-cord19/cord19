@@ -1,0 +1,3 @@
+solr_url: 'http://localhost:8983/solr/covid19_dev'
+solr_server: 'localhost'
+data_path: '/opt/data/document_parses/'
