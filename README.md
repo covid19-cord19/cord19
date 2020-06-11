@@ -45,7 +45,7 @@ During the document ingestion process we generate the idf dictionary for the ent
  << Add Query response Json example >>
 
 
-![Custom solution](https://github.com/covid19-cord19/cord19/blob/master/images/covid19.png)
+![Custom solution](https://github.com/covid19-cord19/cord19/blob/master/images/covid19_2.png)
 
 
 
