@@ -48,6 +48,20 @@ During the document ingestion process we generate the idf dictionary for the ent
 ![Custom solution](https://github.com/covid19-cord19/cord19/blob/master/images/covid19_2.png)
 
 
+# How to make it work on your local
+
+## Pre-requisites:
+    1. Solr server should be setup and ready to use.
+        - Kaggle dataset is downloaded and unzipped to solr VM folder /opt/data/
+        - All the code present in repository is chekedout to /opt/code
+    
+## Data Ingestion - solr_ingestor.py
+  solr_ingestor.py file is used to ingest and index COVID-19 kaggle dataset to Solr. Use below code snippet to start ingestion process.
+  
+    python3 /opt/code/COVID19/solr_intercepts/solr_ingestor.py -p /opt/data/document_parses/ -e prod
+  
+  _Note : This step assumes that kaggle dataset is present in /opt/data/_ 
+  
 
 
 
