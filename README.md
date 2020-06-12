@@ -2,24 +2,24 @@
 
 # Approach
 
-Our approach solving CORD-19 research challenge is to 2 folds - 
+We attempted to solve the CORD-19 research challenge by applying two main techniques - 
 
  1. Reducing the **search space !**
  2. Surface documents based on **similarity rankings**
 
 ## Reducing search space
 
-We use search engine to ingest all the 138,000 scholarly articles including 68,000 research articles and ingest most of the metadata with the document - title, abstract and body. Search engine in our case Solr using Lucene indexes help us reduce 138k search space to top 100 documents using tf-idf and idf boosting technique.
+Our solution uses a search engine to crawl and ingest all the 138,000 scholarly articles including 68,000 research articles and associated relevant metadata attributes with the document - title, abstract and body. We selected Solr using Lucene indexes as the search engine to help us reduce 138k search space to top 100 documents using tf-idf and idf boosting technique.
 
 ### Why Solr?
 
-Solr an open source search platform, provides advanced near real-time searching capabilities such as fielded search, Boolean queries, phrase queries, fuzzy queries, spell check, wildcards, joins, grouping, auto-complete and many more across different types of data.
+Solr is an open source search platform, that provides many advanced searching capabilities. We found the following capabilities such as fielded search, Boolean queries, phrase queries, fuzzy queries, spell check, wildcards, joins, and grouping extremely useful for our solution.
 
-Solr works by gathering, storing and indexing documents from different sources and making them searchable in near real-time. It follows a 3-step process that involves indexing, querying, and finally, ranking the results – all in near real-time, even though it can work with huge volumes of data.
+Solr follows a 3-step process that involves indexing, querying, and finally, ranking the results – all in near real-time while working with huge volumes of data.
 
 More specifically, here’s how Solr performs the following operations in a sequence to search for a document:
 
- 1. **Indexing** : As the files are already in JSON format, we can upload them directly to Solr by calling the index request handler (or simply index handler). 
+ 1. **Indexing** : As the Cord19 files are already in JSON format, we can upload them directly to Solr by calling the index request handler (or simply index handler). 
  
 Solr uses Lucene to create an inverted index because it inverts a page-centric data structure (documents ⇒ words) to a keyword-centric structure (word ⇒ documents). It’s like the index you see at the end of any book where you can find where certain words occur in the book. Similarly, the Solr index is a list that holds the mapping of words, terms or phrases and their corresponding places in the documents stored.
 
