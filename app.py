@@ -2,7 +2,7 @@
 Program: app.py for Flask Server
 Purpose: Main app for running Flask server for AI based APIs
 Author: 
-       - Sharad Varshney                sharad.varshney@gmail
+       - Sharad Varshney                sharad.varshney@gmail.com
        - Jatin Sharma                   jatinsharma7@gmail.com
        - Guruprasad Ahobalarao          gahoba@gmail.com
        - Krishnanand Kuruppath
@@ -86,6 +86,7 @@ def search():
     # assemble search parameters
     search_params = {
         'q': final_query,
+        'fq': ' '.join(['{0}:{1}'.format("body", term,) for term in cfg['fq_list'].split(',')]),
         'start': 0,
         'rows': 10
     }
