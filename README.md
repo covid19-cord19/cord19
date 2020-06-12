@@ -9,7 +9,7 @@ We attempted to solve the CORD-19 research challenge by applying two main techni
 
 ## Reducing search space
 
-Our solution uses a search engine to crawl and ingest all the 138,000 scholarly articles including 68,000 research articles and associated relevant metadata attributes with the document - title, abstract and body. We selected Solr using Lucene indexes as the search engine to help us reduce 138k search space to top 100 documents using tf-idf and idf boosting technique.
+Our solution uses a search engine to crawl and ingest all the 138,000 scholarly articles including 68,000 research articles and associated relevant metadata attributes with the document - title, abstract and body. We selected Solr with Lucene indexes as the search engine to help us reduce 138k search space to top 100 documents using tf-idf and idf boosting technique.
 
 ### Why Solr?
 
