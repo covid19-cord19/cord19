@@ -2,9 +2,10 @@
 Program: app.py for Flask Server
 Purpose: Main app for running Flask server for AI based APIs
 Author: 
-       - Sharad Varshney sharad.varshney@gmail 
-       - Jatin Sharma    email
-       - xxx             email
+       - Sharad Varshney                sharad.varshney@gmail
+       - Jatin Sharma                   jatinsharma7@gmail.com
+       - Guruprasad Ahobalarao          gahoba@gmail.com
+       - Krishnanand Kuruppath
 """
 import os
 import sys
@@ -52,6 +53,16 @@ def getDescription(jsonInput):
     else:
         return ("")
     return (data)
+
+def getMetadata():
+    pd.set_option('display.max_colwidth', -1)
+    metadata = pd.read_csv("../../data/metadata.csv", encoding="utf-8", low_memory=False)
+    metadata = metadata[["sha", "pmcid", "url"]]
+    return metadata
+
+def findURL(documentDF, metadataDF):
+    documentDF["url"] = documentDF["id"].map(lambda x : metadataDF[metadataDF["pmcid"] == x]["url"] if(x.startswith("PMC")) else metadataDF[metadataDF["sha"] == x]["url"])
+    return documentDF
 
 
 #def getEmbeddings(self, session, messages):
@@ -105,6 +116,9 @@ def search():
          i = i + 1
     documentDF['score'] = score
     documentDF.sort_values(by=['score'], ascending=False, inplace=True)
+
+    metadataDF = getMetadata()
+    documentDF = findURL(documentDF, metadataDF)
 
     #final_result = document_similarity.Document_Similarity().getSimilarityRanking(query, toJSON(results))
 

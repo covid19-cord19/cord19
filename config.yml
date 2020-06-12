@@ -1,3 +1,4 @@
-solr_url: 'http://localhost:8983/solr/covid19_dev'
+#solr_url: 'http://172.25.186.103:8983'
+solr_url: 'http://localhost:8983/solr/covid19'
 solr_server: 'localhost'
 data_path: '/opt/data/document_parses/'

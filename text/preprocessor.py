@@ -1,12 +1,16 @@
 """
 Program: Generic Text Preprocessing
 Purpose: All kinds of preprocessing code should land here.
-Author: 
-        - Sharad Varshney    Sharad.varshney@gmail.com
+Author:
+       - Sharad Varshney                sharad.varshney@gmail
+       - Jatin Sharma                   jatinsharma7@gmail.com
+       - Guruprasad Ahobalarao          gahoba@gmail.com
+       - Krishnanand Kuruppath
 """
 
 import json
 import re
+
 from bs4 import BeautifulSoup
 from nltk import WordNetLemmatizer
 from nltk.corpus import stopwords
@@ -14,20 +18,14 @@ from nltk.corpus import wordnet
 from nltk.stem import SnowballStemmer
 from nltk.tokenize import sent_tokenize
 from typing.re import Pattern
+
 import nltk
 nltk.download('stopwords')
 nltk.download('wordnet')
-
-
 class Preprocessor(object):
-
-
     class CleanRegex(object):
-    
+        '''Regexes that can be passed to the `clean_regexes` parameter of Preprocessor.__init__().
         '''
-        Regexes that can be passed to the `clean_regexes` parameter of Preprocessor.__init__().
-        '''
-        
         HexaDecimalNumber = r'0x[a-fA-F0-9]+' # e.g. 0x414548b0
         # e.g. /home/build/rs_110_64_24_RTM/usr.src/sys/netscaler/nsppe_utils.c, file://sjctaasfs01.citrite.net/upload/uploads/77549499
         FilePath = r'(^|\s|file:/)/[a-zA-Z0-9_./-]+'
@@ -60,15 +58,6 @@ class Preprocessor(object):
         self.min_word_len = min_word_len
         self.stopwords = self.get_stopwords(include_domain_specific)
 
-    def clean(self, text, remove_numbers=False, apply_clean_patterns=False):
-        if apply_clean_patterns:
-            text = self.clean_using_patterns(text)
-        if remove_numbers:
-            text = self.p_nonalpha.sub(' ', text)
-        else:
-            text = self.p_nonalnum.sub(' ', text)
-        return self.p_whitespace.sub(' ', text).strip()
-
     def get_stopwords(self, include_domain_specific=True):
         stop_words = []
         for sw in stopwords.words('english'):
@@ -85,7 +74,16 @@ class Preprocessor(object):
         for pattern in self.clean_patterns:
             text = pattern.sub(' ', text)
         return text
-        
+
+    def clean(self, text, remove_numbers=False, apply_clean_patterns=False):
+        if apply_clean_patterns:
+            text = self.clean_using_patterns(text)
+        if remove_numbers:
+            text = self.p_nonalpha.sub(' ', text)
+        else:
+            text = self.p_nonalnum.sub(' ', text)
+        return self.p_whitespace.sub(' ', text).strip()
+
     def stem(self, term):
         return self.snowballStemmer.stem(term)
 

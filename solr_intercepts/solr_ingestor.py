@@ -2,8 +2,12 @@
 """
 Program: solr_ingestor.py
 Purpose: Used for ingesting documents to solr
-Author:  Sharad Varshney
-Created: Mar 26, 2020
+Author:
+       - Sharad Varshney                sharad.varshney@gmail
+       - Jatin Sharma                   jatinsharma7@gmail.com
+       - Guruprasad Ahobalarao          gahoba@gmail.com
+       - Krishnanand Kuruppath
+Created: June 16, 2020
 """
 import os
 import argparse
@@ -14,9 +18,6 @@ import pysolr
 #from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 
 config = {
-    "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=mdcosmuse2tmplptcxdbsa;AccountKey=rGiXSTSeHBEcQbGZreSgxhuGpE4jmb1O+Qx6zU6SnuD1LzMoT73BogNiCyIg9l0q7OJtlZfGsSwVVMD+VCzc9g==;EndpointSuffix=core.windows.net",
-    "storage_account":"mdcosmuse2tmplptcxdbsa",
-    "container_name": "data",
     "solr_url" : "http://localhost:8983/solr/covid19",
     "solr_url_dev" : "http://localhost:8983/solr/covid19_dev",
     "solr_url_prod" : "http://localhost:8983/solr/covid19"
@@ -68,12 +69,12 @@ def solr_indexing_optimization():
 
 def main(basepath, env):
     print("Path : " + basepath)
-    document_count=0
-    list_dir = ["pdf_json", "pmc_json"]
-    for i in list_dir:
-        pathVar = os.path.join(basepath, i)
+    list1 = ["pdf_json", "pmc_json"]
+    document_count = 0
+    for dir_json in list1:
+        pathVar = os.path.join(basepath, dir_json)
         print("Path pathVar : " + pathVar)
-        for entry in os.listdir(pathVar):
+        for entry in os.listdir(pathVar) :
             if os.path.isfile(os.path.join(pathVar, entry)):
                 print(entry)
                 with open(os.path.join(pathVar, entry), "r") as file:
@@ -93,13 +94,19 @@ def main(basepath, env):
                         paper_id = doc["paper_id"]
                     if ("title" in doc["metadata"]) and (doc["metadata"]["title"] is not None):
                         title = doc["metadata"]["title"]
+                    if ("authors" in doc["metadata"]) and (doc["metadata"]["authors"] is not None):
+                        authors = doc["metadata"]["authors"]
                     map1 = {"id": paper_id,
+                            "authors": authors,
                             "title": title,
                             "abstract": abstract,
                             "body": actual_body
                             }
                     print(map1)
+                    document_count = document_count + 1
                 send_for_solr_indexing([map1], env)
+    print("Total numner of documents ingested : " , str(document_count))
+
 
 def main_old(basepath, env):
     print("Path : " + basepath)
@@ -123,7 +130,6 @@ def main_old(basepath, env):
                                 abstract = doc["abstract"][0]["text"]
                         map1 = {"id": doc["paper_id"],
                                 "title": doc["metadata"]["title"],
-                                "authors" : doc["metadata"]["authors"],
                                 "abstract": abstract,
                                 "body": actual_body
                                 }
@@ -145,7 +151,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     main(args.path, args.env)
-
-
-
 
