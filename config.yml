@@ -2,3 +2,4 @@
 solr_url: 'http://localhost:8983/solr/covid19'
 solr_server: 'localhost'
 data_path: '/opt/data/document_parses/'
+fq_list: 'SARS-Cov2, COVID-19, covid-19, coronavirus, corona'
