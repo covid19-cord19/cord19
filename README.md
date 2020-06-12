@@ -62,8 +62,11 @@ During the document ingestion process we generate the idf dictionary for the ent
   
   _Note : This step assumes that kaggle dataset is present in /opt/data/_ 
   
-
-
+## IDF Computation - document_search_engine.py
+  document_search_engine.py file is used to compute the Inverse document frequency for the full corpus.
+  
+    python3 /opt/code/COVID19/document_search/document_search_engine.py
+  
 
 ## SmartyPants
 
