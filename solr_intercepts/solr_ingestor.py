@@ -2,12 +2,11 @@
 """
 Program: solr_ingestor.py
 Purpose: Used for ingesting documents to solr
+Created: Apr 12, 2020
 Author:
-       - Sharad Varshney                sharad.varshney@gmail
+       - Sharad Varshney                sharad.varshney@gmail.com
        - Jatin Sharma                   jatinsharma7@gmail.com
        - Guruprasad Ahobalarao          gahoba@gmail.com
-       - Krishnanand Kuruppath
-Created: June 16, 2020
 """
 import os
 import argparse
