@@ -43,7 +43,24 @@ To fine tune Solr search to return right subset of documents, we need to identif
 During the document ingestion process we generate the idf dictionary for the entire document corpus that serves as a look up to identify boost parameter values.
 
  3. **Ranking the Results** : As it matches indexed documents to a query, Solr ranks the results by their relevance score – the most relevant hits appear at the top of the matched documents
- << Add Query response Json example >>
+
+```python
+def send_for_solr_indexing(doc, env):
+    """
+     Sends the text document for indexing
+     params:
+     doc: text document to be indexed
+     env: dev or prod
+    """
+    if(env):
+        solr = pysolr.Solr(config["solr_url"+"_"+env], timeout=10)
+    else:
+        solr = pysolr.Solr(config["solr_url"], timeout=10)
+   
+    solr.add(doc)
+    solr.optimize()  
+
+```
 
 
 ![Custom solution](https://github.com/covid19-cord19/cord19/blob/master/images/covid19_2.png)
