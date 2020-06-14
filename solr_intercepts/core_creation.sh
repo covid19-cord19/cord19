@@ -12,4 +12,4 @@ bin/solr start
 cd ./server/solr/configsets/
 cp -r sample_techproducts_configs/ ../cores/covid19_dev/
 #then browse to solr UI at http://localhost:8983 and create core
-
+#http://localhost:8983/solr/#/~cores/ to add core with same name as dir created
