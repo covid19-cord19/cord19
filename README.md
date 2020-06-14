@@ -34,7 +34,7 @@ Solr provides flexibility to boost and control the relevance of a document by bo
 For example, if you are searching for, "Impact of Smoking on COVID" and you want the term "Smoking" to be more relevant, you can boost it by adding the ^ symbol along with the boost factor immediately after the term. you could type.
 
                                                
-![Scoring within Solr using Lucene](https://github.com/covid19-cord19/cord19/blob/master/images/lucene_scoring.png)
+![Scoring within Solr using Lucene](https://github.com/covid19-cord19/cord19/blob/master/images/Lucene_scoring.png)
 
                                         << Add query generation code >>
 
