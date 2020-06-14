@@ -43,16 +43,19 @@ config = {
         # print(data)
 
 def send_for_solr_indexing(doc, env):
-    # post to solr for indexing
+    """
+     Sends the text document for indexing
+     params:
+     doc: text document to be indexed
+     env: dev or prod
+    """
     if(env):
         solr = pysolr.Solr(config["solr_url"+"_"+env], timeout=10)
     else:
         solr = pysolr.Solr(config["solr_url"], timeout=10)
-    # How you'd index data.
-    solr.add(doc)
 
-    # You can optimize the index when it gets fragmented, for better speed.
-    solr.optimize()  # Optimize also do commit 'solr/clst5/update/?commit=true' (post) with body '<optimize '
+    solr.add(doc)
+    solr.optimize()
 
 
 '''
