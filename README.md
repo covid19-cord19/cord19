@@ -87,33 +87,43 @@ def process_request(self, term):
  3. **Ranking the Results** : As it matches indexed documents to a query, Solr ranks the results by their relevance score – the most relevant hits appear at the top of the matched documents
 
 
-
-
 ![Custom solution](https://github.com/covid19-cord19/cord19/blob/master/images/covid19_2.png)
 
 
-# How to make it work on your local
-
-## Pre-requisites:
-    1. Solr server should be setup and ready to use.
-        - Kaggle dataset is downloaded and unzipped to solr VM folder /opt/data/
-        - All the code present in repository is chekedout to /opt/code
-    
-## Data Ingestion - solr_ingestor.py
-  solr_ingestor.py file is used to ingest and index COVID-19 kaggle dataset to Solr. Use below code snippet to start ingestion process.
-  
-    python3 /opt/code/COVID19/solr_intercepts/solr_ingestor.py -p /opt/data/document_parses/ -e prod
-  
-  _Note : This step assumes that kaggle dataset is present in /opt/data/_ 
-  
-## IDF Computation - document_search_engine.py
-  document_search_engine.py file is used to compute the Inverse document frequency for the full corpus.
-  
-    python3 /opt/code/COVID19/document_search/document_search_engine.py
   
 ## Sentence vector embeddings from tensorflow hub
 
 ![Sentence Semantic Similarity solution](https://github.com/covid19-cord19/cord19/blob/master/images/Tf-hub_sentence_semantic_similarity.png)
+
+## Document similarity 
+
+Document similarity (or distance between documents) is a one of the central themes in Information Retrieval. How humans usually define how similar are documents? Usually documents treated as similar if they are semantically close and describe similar concepts. 
+Classical approach from computational linguistics is to measure similarity based on the content overlap between documents. For this we will represent documents as sentence embeddings (vectors) , so each document will be a sparse vector. And define measure of overlap as angle between vectors
+
+Similarity (doc1, doc2) = Cos(θ) = (doc1 . doc2) / (||doc1|| . ||doc2||)
+
+	Where doc1 and doc2 are task and document embedding vectors
+
+The resulting similarity ranges from −1 meaning exactly opposite, to 1 meaning exactly the same, with 0 indicating orthogonality or decorrelation, while in-between values indicate intermediate similarity or dissimilarity.
+
+![Cosine Similarity](https://github.com/covid19-cord19/cord19/blob/master/images/cosine_similarity.png)
+
+Subset of documents (result from Solr search) is used to similarity check and rank them in descending order of similarity score
+
+'''
+
+    for task in range(0, len(taskEmbeddings)):
+         j = 1
+         for doc in range(0, len(docsEmbeddings)):
+             cos_sim = cosine_similarity(taskEmbeddings[task].reshape(1, -1), docsEmbeddings[doc].reshape(1, -1))
+             score.append(round(cos_sim[0][0], 3))
+             print('Cosine similarity: Task {0} Document {1} = {2}'.format(i, j, round(cos_sim[0][0], 3)))
+             j = j + 1
+         i = i + 1
+    documentDF['score'] = score
+    documentDF.sort_values(by=['score'], ascending=False, inplace=True)
+
+'''
 
 ## Performance Metrics
 
