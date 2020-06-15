@@ -35,7 +35,4 @@
 **4) How to Send queries to COVID-19 server**
   Use any tool to send REST API call to Solr Server (Postman etc..). Here is the curl command to be used from command line interface:
   
-    curl http://localhost:8080/search --header "Content-Type: application/json" --request POST --data '{
-	"task": "What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?",
-	"sub-task": "Effectiveness of drugs being developed and tried to treat COVID-19 patients.Clinical and bench trials to investigate less common viral inhibitors against COVID-19 such as naproxen, clarithromycin, and minocyclinethat that may exert effects on viral replication."
-}'
+    curl http://34.223.223.77:4004/search --header "Content-Type: application/json" --request POST --data '{"task": "What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?","sub-task": "Effectiveness of drugs being developed and tried to treat COVID-19 patients.Clinical and bench trials to investigate less common viral inhibitors against COVID-19 such as naproxen, clarithromycin, and minocyclinethat that may exert effects on viral replication."}'
