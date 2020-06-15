@@ -79,8 +79,11 @@ def findURL(documentDF, metadataDF):
 def search():
     req = request.get_json()
     print(req)
-    #query = req['task'] + req['sub-task']
-    query = req['task']
+    query = ""
+        if 'sub_task' in req:
+            query = req['task'] + req['sub_task']
+        else:
+            query = req['task']
     # do regular search
     print(query)
     terms = text_preprocessor.Preprocessor().clean_and_tokenize(query, stop=True, lowercase=True, removeUrls=False,
