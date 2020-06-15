@@ -6,6 +6,8 @@ We attempted to solve the CORD-19 research challenge by applying two main techni
 
  1. Reducing the **search space !**
  2. Surface documents based on **similarity rankings**
+ 3. Use **Sentence vector embeddings from tensorflow hub**
+ 4. Complete code at Public Github repository with Apache License v2: https://github.com/covid19-cord19/cord19
 
 ## Reducing search space
 
@@ -109,8 +111,11 @@ def process_request(self, term):
   
     python3 /opt/code/COVID19/document_search/document_search_engine.py
   
+## Sentence vector embeddings from tensorflow hub
 
-## SmartyPants
+![Sentence Semantic Similarity solution](https://github.com/covid19-cord19/cord19/blob/master/images/Tf-hub_sentence_semantic_similarity.png)
+
+## Performance Metrics
 
 SmartyPants converts ASCII punctuation characters into "smart" typographic punctuation HTML entities. For example:
 
@@ -121,41 +126,4 @@ SmartyPants converts ASCII punctuation characters into "smart" typographic punct
 |Dashes          |`-- is en-dash, --- is em-dash`|-- is en-dash, --- is em-dash|
 
 
-## KaTeX
 
-You can render LaTeX mathematical expressions using [KaTeX](https://khan.github.io/KaTeX/):
-
-The *Gamma function* satisfying $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$ is via the Euler integral
-
-$$
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.
-$$
-
-> You can find more information about **LaTeX** mathematical expressions [here](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference).
-
-
-## UML diagrams
-
-You can render UML diagrams using [Mermaid](https://mermaidjs.github.io/). For example, this will produce a sequence diagram:
-
-```mermaid
-sequenceDiagram
-Alice ->> Bob: Hello Bob, how are you?
-Bob-->>John: How about you John?
-Bob--x Alice: I am good thanks!
-Bob-x John: I am good thanks!
-Note right of John: Bob thinks a long<br/>long time, so long<br/>that the text does<br/>not fit on a row.
-
-Bob-->Alice: Checking with John...
-Alice->John: Yes... John, how are you?
-```
-
-And this will produce a flow chart:
-
-```mermaid
-graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
-B --> D{Rhombus}
-C --> D
-```
