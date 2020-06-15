@@ -2,23 +2,24 @@
 
 ## Pre-requisites:
     1. Solr server should be setup and ready to use.
-        - Kaggle dataset is downloaded and unzipped to solr VM folder /opt/data/
-        - All the code present in repository is chekedout to /opt/code
+        - /opt/data - This folder should have the Kaggle dataset downloaded and unzipped.
+        - /opt/code - This folder should have all the application code.
 
-**1)  Data Ingestion - solr_ingestor.py**
-  solr_ingestor.py file is used to ingest and index COVID-19 kaggle dataset to Solr. Use below script to start ingestion process.
+**1)  Data Ingestion - solr_ingestor.py**<br/>
+  Use this file to ingest and index COVID-19 kaggle dataset to Solr. Below script will start the ingestion process.
   
     python3 /opt/code/COVID19/solr_intercepts/solr_ingestor.py -p /opt/data/document_parses/ -e prod
   
-  _Note : This step assumes that kaggle dataset is present in /opt/data/_ 
   
-**2) IDF Computation - document_search_engine.py**
-  document_search_engine.py file is used to compute the Inverse document frequency for the full corpus.
+**2) IDF Computation - document_search_engine.py**<br/>
+  Use this file to compute the Inverse document frequency (IDF) for the full corpus.
   
     python3 /opt/code/COVID19/document_search/document_search_engine.py
+    
+  _Note: IDF dictionary is already generated and is available as part of the code. If IDF dictionary is to be calculated for some other dataset that this file should be used to regenerate IDF dictionary and save it at /opt/code/COVID19/dictionary/
 
-**3) Start COVID-19 server - app.py**
-  app.py file is the starting point for running the API. Below script will start the flask server and expose a REST endpoint POST /search to allow users to search for queries related to COVID-19. Below is the functionality of this API:
+**3) Start COVID-19 server - app.py**<br/>
+  This file is the starting point for running the API. Below script will start the flask server and expose a REST endpoint POST /search to allow users to search for queries related to COVID-19. Below is the functionality of this API:
   1) Clean data - stop word removal, convert to lowercase, tokenize
   2) Lookup query tokens from IDF dictionary and find IDF values
  for each token.
@@ -31,7 +32,7 @@
  
     python3 /opt/code/COVID19/app.py
   
-**4) Send queries to COVID-19 server**
+**4) How to Send queries to COVID-19 server**
   Use any tool to send REST API call to Solr Server (Postman etc..). Here is the curl command to be used from command line interface:
   
     curl http://localhost:8080/search --header "Content-Type: application/json" --request POST --data '{
