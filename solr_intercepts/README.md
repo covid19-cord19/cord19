@@ -1,4 +1,4 @@
-# Step by step process to deploy the solution:
+# Step by step process to run the solution:
 
 ## Pre-requisites:
     1. Solr server should be setup and ready for use.  Ensure the following directories are setup as outlined below
