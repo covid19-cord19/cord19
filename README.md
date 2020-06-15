@@ -36,14 +36,6 @@ For example, if you are searching for, "Impact of Smoking on COVID" and you want
                                                
 ![Scoring within Solr using Lucene](https://github.com/covid19-cord19/cord19/blob/master/images/Lucene_scoring.png)
 
-                                        << Add query generation code >>
-
-**Code snippet**
-To fine tune Solr search to return right subset of documents, we need to identify the right query terms to boost.  This is done by using term’s inverse document frequency (idf), which decreases the weight for commonly used words and increases the weight for words that are not used very much in a collection of documents.
-During the document ingestion process we generate the idf dictionary for the entire document corpus that serves as a look up to identify boost parameter values.
-
- 3. **Ranking the Results** : As it matches indexed documents to a query, Solr ranks the results by their relevance score – the most relevant hits appear at the top of the matched documents
-
 ```python
 def send_for_solr_indexing(doc, env):
     """
@@ -61,6 +53,38 @@ def send_for_solr_indexing(doc, env):
     solr.optimize()  
 
 ```
+
+**Code snippet**
+To fine tune Solr search to return right subset of documents, we need to identify the right query terms to boost.  This is done by using term’s inverse document frequency (idf), which decreases the weight for commonly used words and increases the weight for words that are not used very much in a collection of documents.
+During the document ingestion process we generate the idf dictionary for the entire document corpus that serves as a look up to identify boost parameter values.
+
+
+```python
+def process_request(self, term):
+    """
+     Process request for re-computed inverse document frequency so we can boost query terms.
+     
+     params:
+     term: new terms to be added
+    """
+    self.dictionary = self.load_dictionary("./dictionary", "dictIDF.txt")
+    term_weights = {}
+    for term in terms:
+        try:
+            if term in self.dictionary:
+                term_weights[term]  = self.dictionary[term]
+            else:
+                term_weights[term]  = 5.0
+        except:
+            pass
+    solr_query = ' '.join(['{0}:{3}^{4} {1}:{3}^{4} {2}:{3}^{4}'.format("body", "abstract", "title", term, term_weights[term]) for term in terms])
+    print(solr_query)
+    return solr_query
+```
+
+ 3. **Ranking the Results** : As it matches indexed documents to a query, Solr ranks the results by their relevance score – the most relevant hits appear at the top of the matched documents
+
+
 
 
 ![Custom solution](https://github.com/covid19-cord19/cord19/blob/master/images/covid19_2.png)
