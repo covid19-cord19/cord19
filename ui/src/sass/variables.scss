@@ -1,0 +1,56 @@
+:root {
+    --font-primary: 'Open Sans', sans-serif;
+
+    /* set base values */
+    --text-base-size: 16px;
+    --text-base-line-height: 24px;
+
+    /* spacing */
+    --space-5: 5px;
+    --space-13: 13px;
+    --space-15: 15px;
+    --space-10: 10px;
+    --space-20: 20px;
+    --space-23: 23px;
+    --space-24: 24px;
+    --space-25: 25px;
+    --space-30: 30px;
+    --space-33: 33px;
+    --space-40: 40px;
+    --space-50: 50px;
+    --space-60: 60px;
+
+    /* colors */
+    --color-base: #373a3c;
+    --color-primary: #007dbb;
+    --color-heading: #232E83;
+    --color-grey: #cccccc;
+    --color-table: #f9f9f9;
+    --color-error: #DF1642;
+    --color-processing: #F0AD4E;
+    --color-draft: #5BC0DE;
+    --color-cancelled: #818A91;
+    --color-completed: #5CB85C;
+    --color-border: #DFE2E7;
+    --color-border-btn: #043E5D;
+    --color-search-border: #E7EAEB;
+    --color-background-btn-secondary: #E9E9E9;
+
+    /* typography */
+    --font-size-h1: 36px;
+    --font-size-h2: 24px;
+    --font-size-h3: 18px;
+
+    --line-height-h1: 49px;
+    --line-height-h2: 33px;
+    --line-height-h3: 24px;
+
+    --text-small: 14px;
+    --text-xsmall: 12px;
+
+    --line-height-small: 19px;
+    --line-height-xsmall: 12px;
+
+    /* border colors */
+    --color-border-table: #eceeef;
+}
