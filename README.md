@@ -96,6 +96,10 @@ def process_request(self, term):
 
 ![Sentence Semantic Similarity solution](https://github.com/covid19-cord19/cord19/blob/master/images/Tf-hub_sentence_semantic_similarity.png)
 
+Semantic similarity is a measure of the degree to which two pieces of text carry the same meaning. This is broadly useful in obtaining good coverage over the numerous ways that a thought can be expressed using language without needing to manually enumerate them.
+
+![Sentence Semantic Similarity](https://github.com/covid19-cord19/cord19/blob/master/images/sentence_embedding.png)
+
 ## Document similarity 
 
 Document similarity (or distance between documents) is a one of the central themes in Information Retrieval. How humans usually define how similar are documents? Usually documents treated as similar if they are semantically close and describe similar concepts. 
