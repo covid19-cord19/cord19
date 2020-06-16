@@ -8,6 +8,7 @@ We attempted to solve the CORD-19 research challenge by applying two main techni
  2. Surface documents based on **similarity rankings**
  3. Use **Sentence vector embeddings from tensorflow hub**
  4. Complete code at Public Github repository with Apache License v2: https://github.com/covid19-cord19/cord19
+ 5. Step by step process to run the code can be found at : https://github.com/covid19-cord19/cord19/blob/master/solr_intercepts/README.md
 
 ## Reducing search space
 
