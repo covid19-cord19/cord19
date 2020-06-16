@@ -1,302 +1,525 @@
 [{
-        "value": "Task5",
-        "label": "What is known about transmission, incubation, and environmental stability? What is known about transmission, incubation, and environmental stability? What do we know about natural history, transmission, and diagnostics for the virus? What have we learned about infection prevention and control?",
-        "subtasks": [{
-                "value": "Task_5_1",
-                "label": "Range of incubation periods for the disease in humans (and how this varies across age and health status) and how long individuals are contagious, even after recovery."
-            },
-            {
-                "value": "Task_5_2",
-                "label": "Prevalence of asymptomatic shedding and transmission (e.g., particularly children)."
-            },
-            {
-                "value": "Task_5_3",
-                "label": "Seasonality of transmission."
-            },
-            {
-                "value": "Task_5_4",
-                "label": "Physical science of the coronavirus (e.g., charge distribution, adhesion to hydrophilic/phobic surfaces, environmental survival to inform decontamination efforts for affected areas and provide information about viral shedding)."
-            },
-            {
-                "value": "Task_5_5",
-                "label": "Persistence and stability on a multitude of substrates and sources (e.g., nasal discharge, sputum, urine, fecal matter, blood)."
-            },
-            {
-                "value": "Task_5_6",
-                "label": "Persistence of virus on surfaces of different materials (e,g., copper, stainless steel, plastic)."
-            },
-            {
-                "value": "Task_5_7",
-                "label": "Natural history of the virus and shedding of it from an infected person."
-            },
-            {
-                "value": "Task_5_8",
-                "label": "Range of incubation periods for the disease in humans (and how this varies across age and health status) and how long individuals are contagious, even after recovery."
-            },
-            {
-                "value": "Task_5_9",
-                "label": "Implementation of diagnostics and products to improve clinical processes"
-            },
-            {
-                "value": "Task_5_10",
-                "label": "Disease models, including animal models for infection, disease and transmission"
-            },
-            {
-                "value": "Task_5_11",
-                "label": "Tools and studies to monitor phenotypic change and potential adaptation of the virus"
-            },
-            {
-                "value": "Task_5_12",
-                "label": "Immune response and immunity"
-            },
-            {
-                "value": "Task_5_13",
-                "label": "Effectiveness of movement control strategies to prevent secondary transmission in health care and community settings"
-            },
-            {
-                "value": "Task_5_14",
-                "label": "Effectiveness of personal protective equipment (PPE) and its usefulness to reduce risk of transmission in health care and community settings"
-            },
-            {
-                "value": "Task_5_15",
-                "label": "Role of the environment in transmission"
-            }
-        ]
-    },
-    {
-        "value": "Task1",
-        "label": "What do we know about vaccines and therapeutics? What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?",
-        "subtasks": [{
+		"value": "Task5",
+		"label": "What is known about transmission, incubation, and environmental stability? What is known about transmission, incubation, and environmental stability? What do we know about natural history, transmission, and diagnostics for the virus? What have we learned about infection prevention and control?",
+		"subtasks": [{
+				"value": "Task_5_1",
+				"label": "Range of incubation periods for the disease in humans (and how this varies across age and health status) and how long individuals are contagious, even after recovery."
+			},
+			{
+				"value": "Task_5_2",
+				"label": "Prevalence of asymptomatic shedding and transmission (e.g., particularly children)."
+			},
+			{
+				"value": "Task_5_3",
+				"label": "Seasonality of transmission."
+			},
+			{
+				"value": "Task_5_4",
+				"label": "Physical science of the coronavirus (e.g., charge distribution, adhesion to hydrophilic/phobic surfaces, environmental survival to inform decontamination efforts for affected areas and provide information about viral shedding)."
+			},
+			{
+				"value": "Task_5_5",
+				"label": "Persistence and stability on a multitude of substrates and sources (e.g., nasal discharge, sputum, urine, fecal matter, blood)."
+			},
+			{
+				"value": "Task_5_6",
+				"label": "Persistence of virus on surfaces of different materials (e,g., copper, stainless steel, plastic)."
+			},
+			{
+				"value": "Task_5_7",
+				"label": "Natural history of the virus and shedding of it from an infected person."
+			},
+			{
+				"value": "Task_5_8",
+				"label": "Range of incubation periods for the disease in humans (and how this varies across age and health status) and how long individuals are contagious, even after recovery."
+			},
+			{
+				"value": "Task_5_9",
+				"label": "Implementation of diagnostics and products to improve clinical processes"
+			},
+			{
+				"value": "Task_5_10",
+				"label": "Disease models, including animal models for infection, disease and transmission"
+			},
+			{
+				"value": "Task_5_11",
+				"label": "Tools and studies to monitor phenotypic change and potential adaptation of the virus"
+			},
+			{
+				"value": "Task_5_12",
+				"label": "Immune response and immunity"
+			},
+			{
+				"value": "Task_5_13",
+				"label": "Effectiveness of movement control strategies to prevent secondary transmission in health care and community settings"
+			},
+			{
+				"value": "Task_5_14",
+				"label": "Effectiveness of personal protective equipment (PPE) and its usefulness to reduce risk of transmission in health care and community settings"
+			},
+			{
+				"value": "Task_5_15",
+				"label": "Role of the environment in transmission"
+			}
+		]
+	},
+	{
+		"value": "Task1",
+		"label": "What do we know about vaccines and therapeutics? What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?",
+		"subtasks": [{
 
-                "value": "Task_1_1",
-                "label": "Effectiveness of drugs being developed and tried to treat COVID-19 patients. Clinical and bench trials to investigate less common viral inhibitors against COVID-19 such as naproxen, clarithromycin, and minocyclinethat that may exert effects on viral replication."
-            },
-            {
+				"value": "Task_1_1",
+				"label": "Effectiveness of drugs being developed and tried to treat COVID-19 patients. Clinical and bench trials to investigate less common viral inhibitors against COVID-19 such as naproxen, clarithromycin, and minocyclinethat that may exert effects on viral replication."
+			},
+			{
 
-                "value": "Task_1_2",
-                "label": "Methods evaluating potential complication of Antibody - Dependent Enhancement(ADE) in vaccine recipients."
-            },
-            {
+				"value": "Task_1_2",
+				"label": "Methods evaluating potential complication of Antibody - Dependent Enhancement(ADE) in vaccine recipients."
+			},
+			{
 
-                "value": "Task_1_3",
-                "label": "Exploration of use of best animal models and their predictive value for a human vaccine."
-            },
-            {
+				"value": "Task_1_3",
+				"label": "Exploration of use of best animal models and their predictive value for a human vaccine."
+			},
+			{
 
-                "value": "Task_1_4",
-                "label": "Capabilities to discover a therapeutic (not vaccine) for the disease, and clinical effectiveness studies to discover therapeutics, to include antiviral agents."
-            },
-            {
+				"value": "Task_1_4",
+				"label": "Capabilities to discover a therapeutic (not vaccine) for the disease, and clinical effectiveness studies to discover therapeutics, to include antiviral agents."
+			},
+			{
 
-                "value": "Task_1_5",
-                "label": "Alternative models to aid decision makers in determining how to prioritize and distribute scarce, newly proven therapeutics as production ramps up. This could include identifying approaches for expanding production capacity to ensure equitable and timely distribution to populations in need."
-            },
-            {
+				"value": "Task_1_5",
+				"label": "Alternative models to aid decision makers in determining how to prioritize and distribute scarce, newly proven therapeutics as production ramps up. This could include identifying approaches for expanding production capacity to ensure equitable and timely distribution to populations in need."
+			},
+			{
 
-                "value": "Task_1_6",
-                "label": "Efforts targeted at a universal coronavirus vaccine."
-            },
-            {
+				"value": "Task_1_6",
+				"label": "Efforts targeted at a universal coronavirus vaccine."
+			},
+			{
 
-                "value": "Task_1_7",
-                "label": "Efforts to develop animal models and standardize challenge studies"
-            },
-            {
+				"value": "Task_1_7",
+				"label": "Efforts to develop animal models and standardize challenge studies"
+			},
+			{
 
-                "value": "Task_1_8",
-                "label": "Efforts to develop prophylaxis clinical studies and prioritize in healthcare workers"
-            },
-            {
+				"value": "Task_1_8",
+				"label": "Efforts to develop prophylaxis clinical studies and prioritize in healthcare workers"
+			},
+			{
 
-                "value": "Task_1_9",
-                "label": "Approaches to evaluate risk for enhanced disease after vaccination"
-            },
-            {
+				"value": "Task_1_9",
+				"label": "Approaches to evaluate risk for enhanced disease after vaccination"
+			},
+			{
 
-                "value": "Task_1_10",
-                "label": "Assays to evaluate vaccine immune response and process development for vaccines, alongside suitable animal models [in conjunction with therapeutics]"
-            }
-        ]
+				"value": "Task_1_10",
+				"label": "Assays to evaluate vaccine immune response and process development for vaccines, alongside suitable animal models [in conjunction with therapeutics]"
+			}
+		]
 
-    }, {
-        "value": "Task2",
-        "label": "What do we know about COVID-19 risk factors? What do we know about COVID-19 risk factors? What have we learned from epidemiological studies?",
-        "subtasks": [{
+	}, {
+		"value": "Task2",
+		"label": "What do we know about COVID-19 risk factors? What do we know about COVID-19 risk factors? What have we learned from epidemiological studies?",
+		"subtasks": [{
 
-                "value": "Task_2_1",
-                "label": "Data on potential risks factors"
-            },
-            {
+				"value": "Task_2_1",
+				"label": "Data on potential risks factors"
+			},
+			{
 
-                "value": "Task_2_2",
-                "label": "Smoking, pre-existing pulmonary disease"
-            },
-            {
+				"value": "Task_2_2",
+				"label": "Smoking, pre-existing pulmonary disease"
+			},
+			{
 
-                "value": "Task_2_3",
-                "label": "Co-infections (determine whether co-existing respiratory/viral infections make the virus more transmissible or virulent) and other co-morbidities"
-            },
-            {
+				"value": "Task_2_3",
+				"label": "Co-infections (determine whether co-existing respiratory/viral infections make the virus more transmissible or virulent) and other co-morbidities"
+			},
+			{
 
-                "value": "Task_2_4",
-                "label": "Neonates and pregnant women"
-            },
-            {
+				"value": "Task_2_4",
+				"label": "Neonates and pregnant women"
+			},
+			{
 
-                "value": "Task_2_5",
-                "label": "Socio-economic and behavioral factors to understand the economic impact of the virus and whether there were differences."
-            },
-            {
+				"value": "Task_2_5",
+				"label": "Socio-economic and behavioral factors to understand the economic impact of the virus and whether there were differences."
+			},
+			{
 
-                "value": "Task_2_6",
-                "label": "Transmission dynamics of the virus, including the basic reproductive number, incubation period, serial interval, modes of transmission and environmental factors"
-            },
-            {
+				"value": "Task_2_6",
+				"label": "Transmission dynamics of the virus, including the basic reproductive number, incubation period, serial interval, modes of transmission and environmental factors"
+			},
+			{
 
-                "value": "Task_2_7",
-                "label": "Severity of disease, including risk of fatality among symptomatic hospitalized patients, and high-risk patient groups"
-            },
-            {
+				"value": "Task_2_7",
+				"label": "Severity of disease, including risk of fatality among symptomatic hospitalized patients, and high-risk patient groups"
+			},
+			{
 
-                "value": "Task_2_8",
-                "label": "Susceptibility of populations"
-            },
-            {
+				"value": "Task_2_8",
+				"label": "Susceptibility of populations"
+			},
+			{
 
-                "value": "Task_2_9",
-                "label": "Public health mitigation measures that could be effective for control"
-            },
-            {
+				"value": "Task_2_9",
+				"label": "Public health mitigation measures that could be effective for control"
+			},
+			{
 
-                "value": "Task_2_10",
-                "label": "Assays to evaluate vaccine immune response and process development for vaccines, alongside suitable animal models [in conjunction with therapeutics]"
-            }
-
-
-        ]
-    },
-    {
-        "value": "Task3",
-        "label": "What do we know about virus genetics, origin, and evolution? What do we know about the virus origin and management measures at the human-animal interface?",
-        "subtasks": [{
-
-                "value": "Task_3_1",
-                "label": "Real-time tracking of whole genomes and a mechanism for coordinating the rapid dissemination of that information to inform the development of diagnostics and therapeutics and to track variations of the virus over time."
-            },
-            {
-
-                "value": "Task_3_2",
-                "label": "Access to geographic and temporal diverse sample sets to understand geographic distribution and genomic differences, and determine whether there is more than one strain in circulation. Multi-lateral agreements such as the Nagoya Protocol could be leveraged."
-            },
-            {
-
-                "value": "Task_3_3",
-                "label": "Evidence that livestock could be infected (e.g., field surveillance, genetic sequencing, receptor binding) and serve as a reservoir after the epidemic appears to be over."
-            },
-            {
-
-                "value": "Task_3_4",
-                "label": "Animal host(s) and any evidence of continued spill-over to humans"
-            },
-            {
-
-                "value": "Task_3_5",
-                "label": "Socioeconomic and behavioral risk factors for this spill-over"
-            },
-            {
-
-                "value": "Task_3_6",
-                "label": "Sustainable risk reduction strategies"
-            }
-        ]
-    }, {
-        "value": "Task4",
-        "label": "What has been published about medical care? What has been published concerning surge capacity and nursing homes? What has been published concerning efforts to inform allocation of scarce resources? What do we know about personal protective equipment? What has been published concerning alternative methods to advise on disease management? What has been published concerning processes of care? What do we know about the clinical characterization and management of the virus?",
-        "subtasks": [{
-
-                "value": "Task_4_1",
-                "label": "Resources to support skilled nursing facilities and long term care facilities"
-            },
-            {
-
-                "value": "Task_4_2",
-                "label": "Mobilization of surge medical staff to address shortages in overwhelmed communities"
-            },
-            {
-
-                "value": "Task_4_3",
-                "label": "Age-adjusted mortality data for Acute Respiratory Distress Syndrome (ARDS) with/without other organ failure – particularly for viral etiologies"
-            },
-            {
-
-                "value": "Task_4_4",
-                "label": "Extracorporeal membrane oxygenation (ECMO) outcomes data of COVID-19 patients"
-            },
-            {
-
-                "value": "Task_4_5",
-                "label": "Outcomes data for COVID-19 after mechanical ventilation adjusted for age."
-            },
-            {
-
-                "value": "Task_4_6",
-                "label": "Knowledge of the frequency, manifestations, and course of extrapulmonary manifestations of COVID-19, including, but not limited to, possible cardiomyopathy and cardiac arrest."
-            },
-            {
-
-                "value": "Task_4_7",
-                "label": "Application of regulatory standards (e.g., EUA, CLIA) and ability to adapt care to crisis standards of care level."
-            },
-            {
-
-                "value": "Task_4_8",
-                "label": "Approaches for encouraging and facilitating the production of elastomeric respirators, which can save thousands of N95 masks."
-            },
-            {
-
-                "value": "Task_4_9",
-                "label": "Best telemedicine practices, barriers and faciitators, and specific actions to remove/expand them within and across state boundaries."
-            },
-            {
-
-                "value": "Task_4_10",
-                "label": "Guidance on the simple things people can do at home to take care of sick people and manage disease."
-            },
-            {
-
-                "value": "Task_4_11",
-                "label": "Oral medications that might potentially work."
-            },
-            {
-
-                "value": "Task_4_12",
-                "label": "Use of AI in real-time health care delivery to evaluate interventions, risk factors, and outcomes in a way that could not be done manually."
-            },
-            {
-
-                "value": "Task_4_12",
-                "label": "Best practices and critical challenges and innovative solutions and technologies in hospital flow and organization, workforce protection, workforce allocation, community-based support resources, payment, and supply chain management to enhance capacity, efficiency, and outcomes."
-            },
-            {
-
-                "value": "Task_4_13",
-                "label": "Efforts to define the natural history of disease to inform clinical care, public health interventions, infection prevention control, transmission, and clinical trials"
-            },
-            {
-
-                "value": "Task_4_14",
-                "label": "Efforts to develop a core clinical outcome set to maximize usability of data across a range of trials"
-            },
-            {
-
-                "value": "Task_4_15",
-                "label": "Efforts to determine adjunctive and supportive interventions that can improve the clinical outcomes of infected patients (e.g. steroids, high flow oxygen)"
-            }
+				"value": "Task_2_10",
+				"label": "Assays to evaluate vaccine immune response and process development for vaccines, alongside suitable animal models [in conjunction with therapeutics]"
+			}
 
 
+		]
+	},
+	{
+		"value": "Task3",
+		"label": "What do we know about virus genetics, origin, and evolution? What do we know about the virus origin and management measures at the human-animal interface?",
+		"subtasks": [{
 
-        ]
-    }
+				"value": "Task_3_1",
+				"label": "Real-time tracking of whole genomes and a mechanism for coordinating the rapid dissemination of that information to inform the development of diagnostics and therapeutics and to track variations of the virus over time."
+			},
+			{
+
+				"value": "Task_3_2",
+				"label": "Access to geographic and temporal diverse sample sets to understand geographic distribution and genomic differences, and determine whether there is more than one strain in circulation. Multi-lateral agreements such as the Nagoya Protocol could be leveraged."
+			},
+			{
+
+				"value": "Task_3_3",
+				"label": "Evidence that livestock could be infected (e.g., field surveillance, genetic sequencing, receptor binding) and serve as a reservoir after the epidemic appears to be over."
+			},
+			{
+
+				"value": "Task_3_4",
+				"label": "Animal host(s) and any evidence of continued spill-over to humans"
+			},
+			{
+
+				"value": "Task_3_5",
+				"label": "Socioeconomic and behavioral risk factors for this spill-over"
+			},
+			{
+
+				"value": "Task_3_6",
+				"label": "Sustainable risk reduction strategies"
+			}
+		]
+	}, {
+		"value": "Task4",
+		"label": "What has been published about medical care? What has been published concerning surge capacity and nursing homes? What has been published concerning efforts to inform allocation of scarce resources? What do we know about personal protective equipment? What has been published concerning alternative methods to advise on disease management? What has been published concerning processes of care? What do we know about the clinical characterization and management of the virus?",
+		"subtasks": [{
+
+				"value": "Task_4_1",
+				"label": "Resources to support skilled nursing facilities and long term care facilities"
+			},
+			{
+
+				"value": "Task_4_2",
+				"label": "Mobilization of surge medical staff to address shortages in overwhelmed communities"
+			},
+			{
+
+				"value": "Task_4_3",
+				"label": "Age-adjusted mortality data for Acute Respiratory Distress Syndrome (ARDS) with/without other organ failure – particularly for viral etiologies"
+			},
+			{
+
+				"value": "Task_4_4",
+				"label": "Extracorporeal membrane oxygenation (ECMO) outcomes data of COVID-19 patients"
+			},
+			{
+
+				"value": "Task_4_5",
+				"label": "Outcomes data for COVID-19 after mechanical ventilation adjusted for age."
+			},
+			{
+
+				"value": "Task_4_6",
+				"label": "Knowledge of the frequency, manifestations, and course of extrapulmonary manifestations of COVID-19, including, but not limited to, possible cardiomyopathy and cardiac arrest."
+			},
+			{
+
+				"value": "Task_4_7",
+				"label": "Application of regulatory standards (e.g., EUA, CLIA) and ability to adapt care to crisis standards of care level."
+			},
+			{
+
+				"value": "Task_4_8",
+				"label": "Approaches for encouraging and facilitating the production of elastomeric respirators, which can save thousands of N95 masks."
+			},
+			{
+
+				"value": "Task_4_9",
+				"label": "Best telemedicine practices, barriers and faciitators, and specific actions to remove/expand them within and across state boundaries."
+			},
+			{
+
+				"value": "Task_4_10",
+				"label": "Guidance on the simple things people can do at home to take care of sick people and manage disease."
+			},
+			{
+
+				"value": "Task_4_11",
+				"label": "Oral medications that might potentially work."
+			},
+			{
+
+				"value": "Task_4_12",
+				"label": "Use of AI in real-time health care delivery to evaluate interventions, risk factors, and outcomes in a way that could not be done manually."
+			},
+			{
+
+				"value": "Task_4_12",
+				"label": "Best practices and critical challenges and innovative solutions and technologies in hospital flow and organization, workforce protection, workforce allocation, community-based support resources, payment, and supply chain management to enhance capacity, efficiency, and outcomes."
+			},
+			{
+
+				"value": "Task_4_13",
+				"label": "Efforts to define the natural history of disease to inform clinical care, public health interventions, infection prevention control, transmission, and clinical trials"
+			},
+			{
+
+				"value": "Task_4_14",
+				"label": "Efforts to develop a core clinical outcome set to maximize usability of data across a range of trials"
+			},
+			{
+
+				"value": "Task_4_15",
+				"label": "Efforts to determine adjunctive and supportive interventions that can improve the clinical outcomes of infected patients (e.g. steroids, high flow oxygen)"
+			}
+
+
+
+		]
+	},
+	{
+		"value": "Task7",
+		"label": "What has been published concerning ethical considerations for research? What has been published concerning social sciences at the outbreak response?",
+		"subtasks": [{
+
+				"value": "Task_7_1",
+				"label": "Efforts to articulate and translate existing ethical principles and standards to salient issues in COVID-2019"
+			},
+			{
+
+				"value": "Task_7_2",
+				"label": "Efforts to embed ethics across all thematic areas, engage with novel ethical issues that arise and coordinate to minimize duplication of oversight"
+			},
+			{
+
+				"value": "Task_7_3",
+				"label": "Efforts to support sustained education, access, and capacity building in the area of ethics"
+			},
+			{
+
+				"value": "Task_7_4",
+				"label": "Efforts to establish a team at WHO that will be integrated within multidisciplinary research and operational platforms and that will connect with existing and expanded global networks of social sciences."
+			},
+			{
+
+				"value": "Task_7_5",
+				"label": "Efforts to develop qualitative assessment frameworks to systematically collect information related to local barriers and enablers for the uptake and adherence to public health measures for prevention and control. This includes the rapid identification of the secondary impacts of these measures. (e.g. use of surgical masks, modification of health seeking behaviors for SRH, school closures)"
+			},
+			{
+
+				"value": "Task_7_6",
+				"label": "Efforts to identify how the burden of responding to the outbreak and implementing public health measures affects the physical and psychological health of those providing care for Covid-19 patients and identify the immediate needs that must be addressed."
+			},
+			{
+
+				"value": "Task_7_7",
+				"label": "Efforts to identify the underlying drivers of fear, anxiety and stigma that fuel misinformation and rumor, particularly through social media."
+			}
+
+		]
+	},
+	{
+		"value": "Task8",
+		"label": "What do we know about diagnostics and surveillance? What has been published concerning systematic, holistic approach to diagnostics (from the public health surveillance perspective to being able to predict clinical outcomes)?",
+		"subtasks": [{
+
+				"value": "Task_8_1",
+				"label": "How widespread current exposure is to be able to make immediate policy recommendations on mitigation measures. Denominators for testing and a mechanism for rapidly sharing that information, including demographics, to the extent possible. Sampling methods to determine asymptomatic disease (e.g., use of serosurveys (such as convalescent samples) and early detection of disease (e.g., use of screening of neutralizing antibodies such as ELISAs)."
+			},
+			{
+
+				"value": "Task_8_2",
+				"label": "Efforts to increase capacity on existing diagnostic platforms and tap into existing surveillance platforms."
+			},
+			{
+
+				"value": "Task_8_3",
+				"label": "Recruitment, support, and coordination of local expertise and capacity (public, private—commercial, and non-profit, including academic), including legal, ethical, communications, and operational issues."
+			},
+			{
+
+				"value": "Task_8_4",
+				"label": "National guidance and guidelines about best practices to states (e.g., how states might leverage universities and private laboratories for testing purposes, communications to public health officials and the public)."
+			},
+			{
+
+				"value": "Task_8_5",
+				"label": "Development of a point-of-care test (like a rapid influenza test) and rapid bed-side tests, recognizing the tradeoffs between speed, accessibility, and accuracy."
+			},
+			{
+
+				"value": "Task_8_6",
+				"label": "Rapid design and execution of targeted surveillance experiments calling for all potential testers using PCR in a defined area to start testing and report to a specific entity. These experiments could aid in collecting longitudinal samples, which are critical to understanding the impact of ad hoc local interventions (which also need to be recorded)."
+			},
+			{
+
+				"value": "Task_8_7",
+				"label": "Separation of assay development issues from instruments, and the role of the private sector to help quickly migrate assays onto those devices."
+			},
+			{
+
+				"value": "Task_8_8",
+				"label": "Efforts to track the evolution of the virus (i.e., genetic drift or mutations) and avoid locking into specific reagents and surveillance/detection schemes."
+			},
+			{
+
+				"value": "Task_8_9",
+				"label": "Latency issues and when there is sufficient viral load to detect the pathogen, and understanding of what is needed in terms of biological and environmental sampling."
+			},
+			{
+
+				"value": "Task_8_10",
+				"label": "Use of diagnostics such as host response markers (e.g., cytokines) to detect early disease or predict severe disease progression, which would be important to understanding best clinical practice and efficacy of therapeutic interventions."
+			},
+			{
+
+				"value": "Task_8_11",
+				"label": "Policies and protocols for screening and testing."
+			},
+			{
+
+				"value": "Task_8_12",
+				"label": "Policies to mitigate the effects on supplies associated with mass testing, including swabs and reagents."
+			},
+			{
+
+				"value": "Task_8_13",
+				"label": "Technology roadmap for diagnostics."
+			},
+			{
+
+				"value": "Task_8_14",
+				"label": "Barriers to developing and scaling up new diagnostic tests (e.g., market forces), how future coalition and accelerator models (e.g., Coalition for Epidemic Preparedness Innovations) could provide critical funding for diagnostics, and opportunities for a streamlined regulatory environment."
+			},
+			{
+
+				"value": "Task_8_15",
+				"label": "New platforms and technology (e.g., CRISPR) to improve response times and employ more holistic approaches to COVID-19 and future diseases."
+			},
+			{
+
+				"value": "Task_8_16",
+				"label": "Coupling genomics and diagnostic testing on a large scale."
+			},
+			{
+
+				"value": "Task_8_17",
+				"label": "Enhance capabilities for rapid sequencing and bioinformatics to target regions of the genome that will allow specificity for a particular variant."
+			},
+			{
+
+				"value": "Task_8_18",
+				"label": "Enhance capabilities for rapid sequencing and bioinformatics to target regions of the genome that will allow specificity for a particular variant."
+			},
+			{
+
+				"value": "Task_8_19",
+				"label": "Enhance capacity (people, technology, data) for sequencing with advanced analytics for unknown pathogens, and explore capabilities for distinguishing naturally-occurring pathogens from intentional."
+			},
+			{
+
+				"value": "Task_8_20",
+				"label": "One Health surveillance of humans and potential sources of future spillover or ongoing exposure for this organism and future pathogens, including both evolutionary hosts (e.g., bats) and transmission hosts (e.g., heavily trafficked and farmed wildlife and domestic food and companion species), inclusive of environmental, demographic, and occupational risk factors."
+			}
+
+		]
+	},
+	{
+		"value": "Task9",
+		"label": "What has been published about information sharing and inter-sectoral collaboration? What has been published about data standards and nomenclature? What has been published about governmental public health? What do we know about risk communication? What has been published about communicating with high-risk populations? What has been published to clarify community measures? What has been published about equity considerations and problems of inequity?",
+		"subtasks": [{
+
+				"value": "Task_9_1",
+				"label": "Methods for coordinating data-gathering with standardized nomenclature."
+			},
+			{
+
+				"value": "Task_9_2",
+				"label": "Sharing response information among planners, providers, and others."
+			},
+			{
+
+				"value": "Task_9_3",
+				"label": "Understanding and mitigating barriers to information-sharing."
+			},
+			{
+
+				"value": "Task_9_4",
+				"label": "How to recruit, support, and coordinate local (non-Federal) expertise and capacity relevant to public health emergency response (public, private, commercial and non-profit, including academic)."
+			},
+			{
+
+				"value": "Task_9_5",
+				"label": "Integration of federal/state/local public health surveillance systems."
+			},
+			{
+
+				"value": "Task_9_6",
+				"label": "Value of investments in baseline public health response infrastructure preparedness"
+			},
+			{
+
+				"value": "Task_9_7",
+				"label": "Modes of communicating with target high-risk populations (elderly, health care workers)."
+			},
+			{
+
+				"value": "Task_9_8",
+				"label": "Risk communication and guidelines that are easy to understand and follow (include targeting at risk populations’ families too)."
+			},
+			{
+
+				"value": "Task_9_9",
+				"label": "Communication that indicates potential risk of disease to all population groups."
+			},
+			{
+
+				"value": "Task_9_10",
+				"label": "Misunderstanding around containment and mitigation."
+			},
+			{
+
+				"value": "Task_9_11",
+				"label": "Action plan to mitigate gaps and problems of inequity in the Nation’s public health capability, capacity, and funding to ensure all citizens in need are supported and can access information, surveillance, and treatment."
+			},
+			{
+
+				"value": "Task_9_12",
+				"label": "Measures to reach marginalized and disadvantaged populations.Data systems and research priorities and agendas incorporate attention to the needs and circumstances of disadvantaged populations and underrepresented minorities."
+			},
+			{
+
+				"value": "Task_9_13",
+				"label": "Mitigating threats to incarcerated people from COVID-19, assuring access to information, prevention, diagnosis, and treatment."
+			},
+			{
+
+				"value": "Task_9_14",
+				"label": "Understanding coverage policies (barriers and opportunities) related to testing, treatment, and care"
+			}
+
+		]
+	}
 
 
 
