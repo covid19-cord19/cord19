@@ -9,8 +9,8 @@ const Header = (props) => {
 					COVID 19
 				</a>
 
-				<a href='/' className='cw-hading cw-heading--usermgmt' title='Contact Us'>
-					Contact Us
+				<a href='mailto:gahoba@gmail.com' className='cw-hading cw-heading--usermgmt' title='Email '>
+					Email Us
 				</a>
 			</div>
 		</div>

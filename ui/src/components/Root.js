@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Header from './Header';
 import AppContent from './AppContent';
 

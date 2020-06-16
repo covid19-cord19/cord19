@@ -89,49 +89,63 @@ const AppContent = () => {
 			{showLoader ? <Loader /> : null}
 			{responseData && responseData.length
 				? responseData.map((data, index) => {
+						let formattedNameArr = [],
+							authorsName = '';
+						if (data['authors'] && data['authors'].length) {
+							let authnameArr = data['authors'].map((data, index) => {
+								return data.split(', ').filter((data2) => {
+									return data2.includes('last') || data2.includes('first');
+								});
+							});
+							let formattedNameArr = authnameArr.map((dta, index) => {
+								let firstname = dta[1].split('=')[1];
+								let lastname = dta[0].split('=')[1];
+								return firstname + '' + lastname;
+							});
+							authorsName = formattedNameArr.join(', ');
+						}
+
 						return (
 							<div className='cw-section mb-30' key={index}>
-								<div className='cols-sm-12'>
-									<div className='row d-flex flex-column justify-content-left item p-20'>
-										<div className='item-title mb-10'>
-											<span>{responseData[index]['title'][0]}</span>
-										</div>
-										<div className='item-similairy-score mb-10'>
-											<span>
-												<b>Authors: </b>
-											</span>
-											<span></span>
-										</div>
-										<div className='item-similairy-score mb-10'>
-											<span>
-												<b>Similarity: </b>
-											</span>
-											<span>{responseData[index]['score']}</span>
-										</div>
-										<div className='item-description mb-10'>
-											<ShowMoreText
-												lines={3}
-												more='Show more'
-												less='Show less'
-												anchorClass=''
-												onClick={_executeOnClick}
-												expanded={false}>
-												{responseData[index]['body']}
-											</ShowMoreText>
-										</div>
-										<div className='item-url mb-10'>
-											{responseData[index]['url'] && responseData[index]['url'].length
-												? responseData[index]['url'][0].split(';').map((data, index) => {
-														return (
-															<div>
-																<a href={data} target='_blank'>
-																	{data}
-																</a>
-															</div>
-														);
-												  })
-												: ''}
-										</div>
+								<div className='row d-flex flex-column justify-content-left item p-20'>
+									<div className='item-title mb-10'>
+										<span>{responseData[index]['title'][0]}</span>
+									</div>
+									<div className='item-similairy-score mb-10'>
+										<span>
+											<b>Authors: </b>
+										</span>
+										<span>{authorsName}</span>
+									</div>
+									<div className='item-similairy-score mb-10'>
+										<span>
+											<b>Similarity: </b>
+										</span>
+										<span>{responseData[index]['score']}</span>
+									</div>
+									<div className='item-description mb-10'>
+										<ShowMoreText
+											lines={3}
+											more='Show more'
+											less='Show less'
+											anchorClass=''
+											onClick={_executeOnClick}
+											expanded={false}>
+											{responseData[index]['body']}
+										</ShowMoreText>
+									</div>
+									<div className='item-url mb-10'>
+										{responseData[index]['url'] && responseData[index]['url'].length
+											? responseData[index]['url'][0].split(';').map((data, index) => {
+													return (
+														<div>
+															<a href={data} target='_blank'>
+																{data}
+															</a>
+														</div>
+													);
+											  })
+											: ''}
 									</div>
 								</div>
 							</div>
