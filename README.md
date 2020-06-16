@@ -94,11 +94,34 @@ def process_request(self, term):
   
 ## Sentence vector embeddings from tensorflow hub
 
-![Sentence Semantic Similarity solution](https://github.com/covid19-cord19/cord19/blob/master/images/Tf-hub_sentence_semantic_similarity.png)
-
 Semantic similarity is a measure of the degree to which two pieces of text carry the same meaning. This is broadly useful in obtaining good coverage over the numerous ways that a thought can be expressed using language without needing to manually enumerate them.
 
 ![Sentence Semantic Similarity](https://github.com/covid19-cord19/cord19/blob/master/images/sentence_embedding.png)
+
+We use Tensorflow hub module for universal-sentence-encoder, The Universal Sentence Encoder encodes text into high-dimensional vectors that can be used for text classification, semantic similarity, clustering and other natural language tasks.The model is trained and optimized for greater-than-word length text, such as sentences, phrases or short paragraphs. It is trained on a variety of data sources and a variety of tasks with the aim of dynamically accommodating a wide variety of natural language understanding tasks. The input is variable length English text and the output is a 512 dimensional vector.
+
+One of the example use case:
+
+```python
+import tensorflow_hub as hub
+
+embed = hub.load("https://tfhub.dev/google/universal-sentence-encoder/3")
+embeddings = embed([
+    "The quick brown fox jumps over the lazy dog.",
+    "I am a sentence for which I would like to get its embedding"])["outputs"]
+
+print(embeddings)
+
+# The following are example embedding output of 512 dimensions per sentence
+# Embedding for: The quick brown fox jumps over the lazy dog.
+# [-0.03133016 -0.06338634 -0.01607501, ...]
+# Embedding for: I am a sentence for which I would like to get its embedding.
+# [0.05080863 -0.0165243   0.01573782, ...]
+
+```
+Typical model pipeline for sentence-encoder in google based flow looks like: 
+
+![Sentence Semantic Similarity solution](https://github.com/covid19-cord19/cord19/blob/master/images/Tf-hub_sentence_semantic_similarity.png)
 
 ## Document similarity 
 
