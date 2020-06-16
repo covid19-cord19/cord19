@@ -15,9 +15,9 @@ const AppContent = () => {
 	let [responseData, setresponseData] = useState([]);
 
 	let defaultTask = {
-		value: 'Task1',
+		value: 'Task5',
 		label:
-			'What do we know about vaccines and therapeutics? What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?',
+			'What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?',
 	};
 
 	useEffect(() => {
