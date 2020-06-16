@@ -1,179 +1,120 @@
 [{
 		"value": "Task5",
-		"label": "What is known about transmission, incubation, and environmental stability? What is known about transmission, incubation, and environmental stability? What do we know about natural history, transmission, and diagnostics for the virus? What have we learned about infection prevention and control?",
+		"label": "What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?",
 		"subtasks": [{
-				"value": "Task_5_1",
+			"value": "Task_5_1",
+			"label": "Effectiveness of drugs being developed and tried to treat COVID-19 patients. Clinical and bench trials to investigate less common viral inhibitors against COVID-19 such as naproxen, clarithromycin, and minocyclinethat that may exert effects on viral replication."
+		}, {
+			"value": "Task_5_2",
+			"label": "Methods evaluating potential complication of Antibody-Dependent Enhancement (ADE) in vaccine recipients."
+		}, {
+			"value": "Task_5_3",
+			"label": "Exploration of use of best animal models and their predictive value for a human vaccine."
+		}, {
+			"value": "Task_5_4",
+			"label": "Capabilities to discover a therapeutic (not vaccine) for the disease, and clinical effectiveness studies to discover therapeutics, to include antiviral agents."
+		}, {
+			"value": "Task_5_5",
+			"label": "Alternative models to aid decision makers in determining how to prioritize and distribute scarce, newly proven therapeutics as production ramps up. This could include identifying approaches for expanding production capacity to ensure equitable and timely distribution to populations in need."
+		}, {
+			"value": "Task_5_6",
+			"label": "Efforts targeted at a universal coronavirus vaccine."
+		}, {
+			"value": "Task_5_7",
+			"label": "Efforts to develop animal models and standardize challenge studies"
+		}, {
+			"value": "Task_5_8",
+			"label": "Efforts to develop prophylaxis clinical studies and prioritize in healthcare workers"
+		}, {
+			"value": "Task_5_8",
+			"label": "Approaches to evaluate risk for enhanced disease after vaccination"
+		}, {
+			"value": "Task_5_9",
+			"label": "Assays to evaluate vaccine immune response and process development for vaccines, alongside suitable animal models [in conjunction with therapeutics]"
+		}]
+	},
+	{
+
+		"value": "Task1",
+		"label": "What is known about transmission, incubation, and environmental stability? What do we know about natural history, transmission, and diagnostics for the virus? What have we learned about infection prevention and control?",
+		"subtasks": [{
+				"value": "Task_1_1",
 				"label": "Range of incubation periods for the disease in humans (and how this varies across age and health status) and how long individuals are contagious, even after recovery."
-			},
-			{
-				"value": "Task_5_2",
+			}, {
+				"value": "Task_1_2",
 				"label": "Prevalence of asymptomatic shedding and transmission (e.g., particularly children)."
-			},
-			{
-				"value": "Task_5_3",
+			}, {
+				"value": "Task_1_3",
 				"label": "Seasonality of transmission."
-			},
-			{
-				"value": "Task_5_4",
+			}, {
+				"value": "Task_1_4",
 				"label": "Physical science of the coronavirus (e.g., charge distribution, adhesion to hydrophilic/phobic surfaces, environmental survival to inform decontamination efforts for affected areas and provide information about viral shedding)."
-			},
-			{
-				"value": "Task_5_5",
+			}, {
+				"value": "Task_1_5",
 				"label": "Persistence and stability on a multitude of substrates and sources (e.g., nasal discharge, sputum, urine, fecal matter, blood)."
-			},
-			{
-				"value": "Task_5_6",
+			}, {
+				"value": "Task_1_6",
 				"label": "Persistence of virus on surfaces of different materials (e,g., copper, stainless steel, plastic)."
 			},
+
 			{
-				"value": "Task_5_7",
-				"label": "Natural history of the virus and shedding of it from an infected person."
-			},
-			{
-				"value": "Task_5_8",
-				"label": "Range of incubation periods for the disease in humans (and how this varies across age and health status) and how long individuals are contagious, even after recovery."
-			},
-			{
-				"value": "Task_5_9",
+				"value": "Task_1_7",
+				"label": "Natural history of the virus and shedding of it from an infected person"
+			}, {
+				"value": "Task_1_8",
 				"label": "Implementation of diagnostics and products to improve clinical processes"
-			},
-			{
-				"value": "Task_5_10",
+			}, {
+				"value": "Task_1_9",
 				"label": "Disease models, including animal models for infection, disease and transmission"
-			},
-			{
-				"value": "Task_5_11",
+			}, {
+				"value": "Task_1_10",
 				"label": "Tools and studies to monitor phenotypic change and potential adaptation of the virus"
-			},
-			{
-				"value": "Task_5_12",
+			}, {
+				"value": "Task_1_11",
 				"label": "Immune response and immunity"
-			},
-			{
-				"value": "Task_5_13",
+			}, {
+				"value": "Task_1_12",
 				"label": "Effectiveness of movement control strategies to prevent secondary transmission in health care and community settings"
-			},
-			{
-				"value": "Task_5_14",
+			}, {
+				"value": "Task_1_13",
 				"label": "Effectiveness of personal protective equipment (PPE) and its usefulness to reduce risk of transmission in health care and community settings"
-			},
-			{
-				"value": "Task_5_15",
-				"label": "Role of the environment in transmission"
+			}, {
+				"value": "Task_1_14",
+				"lable": "Role of the environment in transmission"
 			}
 		]
 	},
 	{
-		"value": "Task1",
-		"label": "What do we know about vaccines and therapeutics? What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?",
-		"subtasks": [{
-
-				"value": "Task_1_1",
-				"label": "Effectiveness of drugs being developed and tried to treat COVID-19 patients. Clinical and bench trials to investigate less common viral inhibitors against COVID-19 such as naproxen, clarithromycin, and minocyclinethat that may exert effects on viral replication."
-			},
-			{
-
-				"value": "Task_1_2",
-				"label": "Methods evaluating potential complication of Antibody - Dependent Enhancement(ADE) in vaccine recipients."
-			},
-			{
-
-				"value": "Task_1_3",
-				"label": "Exploration of use of best animal models and their predictive value for a human vaccine."
-			},
-			{
-
-				"value": "Task_1_4",
-				"label": "Capabilities to discover a therapeutic (not vaccine) for the disease, and clinical effectiveness studies to discover therapeutics, to include antiviral agents."
-			},
-			{
-
-				"value": "Task_1_5",
-				"label": "Alternative models to aid decision makers in determining how to prioritize and distribute scarce, newly proven therapeutics as production ramps up. This could include identifying approaches for expanding production capacity to ensure equitable and timely distribution to populations in need."
-			},
-			{
-
-				"value": "Task_1_6",
-				"label": "Efforts targeted at a universal coronavirus vaccine."
-			},
-			{
-
-				"value": "Task_1_7",
-				"label": "Efforts to develop animal models and standardize challenge studies"
-			},
-			{
-
-				"value": "Task_1_8",
-				"label": "Efforts to develop prophylaxis clinical studies and prioritize in healthcare workers"
-			},
-			{
-
-				"value": "Task_1_9",
-				"label": "Approaches to evaluate risk for enhanced disease after vaccination"
-			},
-			{
-
-				"value": "Task_1_10",
-				"label": "Assays to evaluate vaccine immune response and process development for vaccines, alongside suitable animal models [in conjunction with therapeutics]"
-			}
-		]
-
-	}, {
 		"value": "Task2",
-		"label": "What do we know about COVID-19 risk factors? What do we know about COVID-19 risk factors? What have we learned from epidemiological studies?",
+		"label": "What do we know about COVID-19 risk factors? What have we learned from epidemiological studies?",
 		"subtasks": [{
-
-				"value": "Task_2_1",
-				"label": "Data on potential risks factors"
-			},
-			{
-
-				"value": "Task_2_2",
-				"label": "Smoking, pre-existing pulmonary disease"
-			},
-			{
-
-				"value": "Task_2_3",
-				"label": "Co-infections (determine whether co-existing respiratory/viral infections make the virus more transmissible or virulent) and other co-morbidities"
-			},
-			{
-
-				"value": "Task_2_4",
-				"label": "Neonates and pregnant women"
-			},
-			{
-
-				"value": "Task_2_5",
-				"label": "Socio-economic and behavioral factors to understand the economic impact of the virus and whether there were differences."
-			},
-			{
-
-				"value": "Task_2_6",
-				"label": "Transmission dynamics of the virus, including the basic reproductive number, incubation period, serial interval, modes of transmission and environmental factors"
-			},
-			{
-
-				"value": "Task_2_7",
-				"label": "Severity of disease, including risk of fatality among symptomatic hospitalized patients, and high-risk patient groups"
-			},
-			{
-
-				"value": "Task_2_8",
-				"label": "Susceptibility of populations"
-			},
-			{
-
-				"value": "Task_2_9",
-				"label": "Public health mitigation measures that could be effective for control"
-			},
-			{
-
-				"value": "Task_2_10",
-				"label": "Assays to evaluate vaccine immune response and process development for vaccines, alongside suitable animal models [in conjunction with therapeutics]"
-			}
-
-
-		]
+			"value": "Task_2_1",
+			"label": "Data on potential risks factors"
+		}, {
+			"value": "Task_2_2",
+			"label": "Smoking, pre-existing pulmonary disease"
+		}, {
+			"value": "Task_2_3",
+			"label": "Co-infections (determine whether co-existing respiratory/viral infections make the virus more transmissible or virulent) and other co-morbidities"
+		}, {
+			"value": "Task_2_4",
+			"label": "Neonates and pregnant women"
+		}, {
+			"value": "Task_2_5",
+			"label": "Socio-economic and behavioral factors to understand the economic impact of the virus and whether there were differences."
+		}, {
+			"value": "Task_2_6",
+			"label": "Transmission dynamics of the virus, including the basic reproductive number, incubation period, serial interval, modes of transmission and environmental factors"
+		}, {
+			"value": "Task_2_7",
+			"label": "Severity of disease, including risk of fatality among symptomatic hospitalized patients, and high-risk patient groups"
+		}, {
+			"value": "Task_2_8",
+			"label": "Susceptibility of populations"
+		}, {
+			"value": "Task_2_9",
+			"label": "Public health mitigation measures that could be effective for control"
+		}]
 	},
 	{
 		"value": "Task3",
