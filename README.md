@@ -115,7 +115,7 @@ The resulting similarity ranges from −1 meaning exactly opposite, to 1 meaning
 
 Subset of documents (result from Solr search) is used to similarity check and rank them in descending order of similarity score
 
-'''
+```python
 
     for task in range(0, len(taskEmbeddings)):
          j = 1
@@ -128,6 +128,6 @@ Subset of documents (result from Solr search) is used to similarity check and ra
     documentDF['score'] = score
     documentDF.sort_values(by=['score'], ascending=False, inplace=True)
 
-'''
+```
 
 
