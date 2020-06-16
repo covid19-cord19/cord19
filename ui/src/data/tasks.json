@@ -118,124 +118,137 @@
 	},
 	{
 		"value": "Task3",
-		"label": "What do we know about virus genetics, origin, and evolution? What do we know about the virus origin and management measures at the human-animal interface?",
+		"label": "What do we know about virus genetics, origin, and evolution? What do we know about the virus origin and management measures at the human-animal interface",
 		"subtasks": [{
-
 				"value": "Task_3_1",
 				"label": "Real-time tracking of whole genomes and a mechanism for coordinating the rapid dissemination of that information to inform the development of diagnostics and therapeutics and to track variations of the virus over time."
 			},
 			{
-
 				"value": "Task_3_2",
 				"label": "Access to geographic and temporal diverse sample sets to understand geographic distribution and genomic differences, and determine whether there is more than one strain in circulation. Multi-lateral agreements such as the Nagoya Protocol could be leveraged."
 			},
 			{
-
 				"value": "Task_3_3",
-				"label": "Evidence that livestock could be infected (e.g., field surveillance, genetic sequencing, receptor binding) and serve as a reservoir after the epidemic appears to be over."
+				"label": "Evidence that livestock could be infected (e.g., field surveillance, genetic sequencing, receptor binding) and serve as a reservoir after the epidemic appears to be over. "
 			},
 			{
-
 				"value": "Task_3_4",
 				"label": "Animal host(s) and any evidence of continued spill-over to humans"
 			},
 			{
-
 				"value": "Task_3_5",
 				"label": "Socioeconomic and behavioral risk factors for this spill-over"
 			},
 			{
-
 				"value": "Task_3_6",
 				"label": "Sustainable risk reduction strategies"
 			}
 		]
-	}, {
+	},
+	{
 		"value": "Task4",
 		"label": "What has been published about medical care? What has been published concerning surge capacity and nursing homes? What has been published concerning efforts to inform allocation of scarce resources? What do we know about personal protective equipment? What has been published concerning alternative methods to advise on disease management? What has been published concerning processes of care? What do we know about the clinical characterization and management of the virus?",
 		"subtasks": [{
-
 				"value": "Task_4_1",
-				"label": "Resources to support skilled nursing facilities and long term care facilities"
+				"label": "Resources to support skilled nursing facilities and long term care facilities."
 			},
 			{
-
 				"value": "Task_4_2",
 				"label": "Mobilization of surge medical staff to address shortages in overwhelmed communities"
 			},
 			{
-
 				"value": "Task_4_3",
 				"label": "Age-adjusted mortality data for Acute Respiratory Distress Syndrome (ARDS) with/without other organ failure – particularly for viral etiologies"
 			},
 			{
-
 				"value": "Task_4_4",
 				"label": "Extracorporeal membrane oxygenation (ECMO) outcomes data of COVID-19 patients"
 			},
 			{
-
 				"value": "Task_4_5",
 				"label": "Outcomes data for COVID-19 after mechanical ventilation adjusted for age."
 			},
 			{
-
 				"value": "Task_4_6",
 				"label": "Knowledge of the frequency, manifestations, and course of extrapulmonary manifestations of COVID-19, including, but not limited to, possible cardiomyopathy and cardiac arrest."
 			},
 			{
-
 				"value": "Task_4_7",
 				"label": "Application of regulatory standards (e.g., EUA, CLIA) and ability to adapt care to crisis standards of care level."
 			},
 			{
-
 				"value": "Task_4_8",
 				"label": "Approaches for encouraging and facilitating the production of elastomeric respirators, which can save thousands of N95 masks."
 			},
 			{
-
 				"value": "Task_4_9",
 				"label": "Best telemedicine practices, barriers and faciitators, and specific actions to remove/expand them within and across state boundaries."
 			},
 			{
-
 				"value": "Task_4_10",
 				"label": "Guidance on the simple things people can do at home to take care of sick people and manage disease."
 			},
 			{
-
 				"value": "Task_4_11",
 				"label": "Oral medications that might potentially work."
 			},
 			{
-
 				"value": "Task_4_12",
 				"label": "Use of AI in real-time health care delivery to evaluate interventions, risk factors, and outcomes in a way that could not be done manually."
 			},
 			{
-
-				"value": "Task_4_12",
+				"value": "Task_4_13",
 				"label": "Best practices and critical challenges and innovative solutions and technologies in hospital flow and organization, workforce protection, workforce allocation, community-based support resources, payment, and supply chain management to enhance capacity, efficiency, and outcomes."
 			},
 			{
-
-				"value": "Task_4_13",
+				"value": "Task_4_14",
 				"label": "Efforts to define the natural history of disease to inform clinical care, public health interventions, infection prevention control, transmission, and clinical trials"
 			},
 			{
-
-				"value": "Task_4_14",
+				"value": "Task_4_15",
 				"label": "Efforts to develop a core clinical outcome set to maximize usability of data across a range of trials"
 			},
 			{
-
-				"value": "Task_4_15",
+				"value": "Task_4_16",
 				"label": "Efforts to determine adjunctive and supportive interventions that can improve the clinical outcomes of infected patients (e.g. steroids, high flow oxygen)"
 			}
-
-
-
+		]
+	},
+	{
+		"value": "Task6",
+		"label": "What do we know about the effectiveness of non-pharmaceutical interventions? What is known about equity and barriers to compliance for non-pharmaceutical interventions?",
+		"subtasks": [{
+				"value": "Task_6_1",
+				"label": "Guidance on ways to scale up NPIs in a more coordinated way (e.g., establish funding, infrastructure and authorities to support real time, authoritative (qualified participants) collaboration with all states to gain consensus on consistent guidance and to mobilize resources to geographic areas where critical shortfalls are identified) to give us time to enhance our health care delivery system capacity to respond to an increase in cases."
+			},
+			{
+				"value": "Task_6_2",
+				"label": "Rapid design and execution of experiments to examine and compare NPIs currently being implemented. DHS Centers for Excellence could potentially be leveraged to conduct these experiments."
+			},
+			{
+				"value": "Task_6_3",
+				"label": "Rapid assessment of the likely efficacy of school closures, travel bans, bans on mass gatherings of various sizes, and other social distancing approaches."
+			},
+			{
+				"value": "Task_6_4",
+				"label": "Methods to control the spread in communities, barriers to compliance and how these vary among different populations."
+			},
+			{
+				"value": "Task_6_5",
+				"label": "Models of potential interventions to predict costs and benefits that take account of such factors as race, income, disability, age, geographic location, immigration status, housing status, employment status, and health insurance status."
+			},
+			{
+				"value": "Task_6_6",
+				"label": "Policy changes necessary to enable the compliance of individuals with limited resources and the underserved with NPIs."
+			},
+			{
+				"value": "Task_6_7",
+				"label": "Research on why people fail to comply with public health advice, even if they want to do so (e.g., social or financial costs may be too high)."
+			},
+			{
+				"value": "Task_6_8",
+				"label": "Research on the economic impact of this or any pandemic. This would include identifying policy and programmatic alternatives that lessen/mitigate risks to critical government services, food distribution and supplies, access to critical household supplies, and access to health diagnoses, treatment, and needed care, regardless of ability to pay."
+			}
 		]
 	},
 	{
