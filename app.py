@@ -2,7 +2,7 @@
 Program: app.py for Flask Server
 Purpose: Main app for running Flask server for AI based APIs
 Author: 
-       - Sharad Varshney                sharad.varshney@gmail
+       - Sharad Varshney                sharad.varshney@gmail.com
        - Jatin Sharma                   jatinsharma7@gmail.com
        - Guruprasad Ahobalarao          gahoba@gmail.com
        - Krishnanand Kuruppath
@@ -23,26 +23,30 @@ from sklearn.metrics.pairwise import cosine_similarity
 import tensorflow_hub as hub
 import pandas as pd
 
-import imp
-intercept = imp.load_source('Intercept', './solr_intercepts/solr_intercept.py')
-text_preprocessor = imp.load_source('Preprocessor', './text/preprocessor.py')
-#document_similarity = imp.load_source('Sentence_Similarity', './solr_intercepts/document_similarity.py')
-#from util import Intercept
-#from text.preprocessor import Preprocessor
-
 CONFIG = os.path.join(os.path.dirname(__file__), 'config.yml')
 with open(CONFIG) as cfg_file:
     cfg = yaml.load(cfg_file)
     cfg_file.close()
+       
+LOGLEVEL= {
+    'DEBUG': 10,
+    'INFO': 20,
+    'WARNING': 30,
+    'ERROR': 40,
+    'CRITICAL': 50
+}
 
-#text_preprocessor = Preprocessor
+FORMAT = '%(levelname)s|%(asctime)s|%(filename)s -> %(funcName)s[%(lineno)d]|%(name)s|%(message)s'
+logging.basicConfig(format=FORMAT)
+logger = logging.getLogger()
+logger.setLevel(LOGLEVEL[cfg['LOG_LEVEL']])
 
+
+import imp
+intercept = imp.load_source('Intercept', './solr_intercepts/solr_intercept.py')
+text_preprocessor = imp.load_source('Preprocessor', './text/preprocessor.py')
 
 app = Flask(__name__)
-
-# init
-#init = tf.global_variables_initializer()
-#init2 = tf.tables_initializer()
 
 def getDescription(jsonInput):
     description = ""
@@ -75,8 +79,11 @@ def findURL(documentDF, metadataDF):
 def search():
     req = request.get_json()
     print(req)
-    #query = req['task'] + req['sub-task']
-    query = req['task']
+    query = ""
+        if 'sub_task' in req:
+            query = req['task'] + req['sub_task']
+        else:
+            query = req['task']
     # do regular search
     print(query)
     terms = text_preprocessor.Preprocessor().clean_and_tokenize(query, stop=True, lowercase=True, removeUrls=False,
@@ -86,6 +93,7 @@ def search():
     # assemble search parameters
     search_params = {
         'q': final_query,
+        'fq': ' '.join(['{0}:{1}'.format("body", term,) for term in cfg['fq_list'].split(',')]),
         'start': 0,
         'rows': 10
     }
@@ -133,6 +141,15 @@ def toJSON(self):
     return json.dumps(self, default=lambda o: o.__dict__,
                       sort_keys=True, indent=4)
 
+def get_all_cfg():
+    json_data = \
+        {
+            'SOLR_URL': cfg['solr_url'],
+            'SOLR_HOST': cfg['solr_server'],
+            'DATA_PATH': cfg['data_path'],
+            'LOG_LEVEL': cfg['LOG_LEVEL']
+        }
+    return json.dumps(json_data, indent=8)
 
 def main(log_level, port, env):
     # TODO add arg parsing and make solr url optional
@@ -142,7 +159,11 @@ def main(log_level, port, env):
 
     #log_level, port = args
     # ------- start app server
-    app.run(debug=True, host='0.0.0.0', port=int(port), use_reloader=False)
+    try:
+        logger.info(f'Starting covid19 app server with configs: {get_all_cfg()}')
+        app.run(debug=True, host='0.0.0.0', port=int(port), use_reloader=False)
+    except Exception as ex:
+        logger.exception(ex)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
