@@ -17,11 +17,6 @@ const Header = (props) => {
 							About Us
 						</NavLink>
 					</span>
-					<span>
-						<a href='mailto:gahoba@gmail.com' className='cw-hading cw-heading--links' title='Email '>
-							Email Us
-						</a>
-					</span>
 				</div>
 			</div>
 		</div>
