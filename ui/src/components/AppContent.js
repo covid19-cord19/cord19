@@ -15,9 +15,9 @@ const AppContent = () => {
 	let [responseData, setresponseData] = useState([]);
 
 	let defaultTask = {
-		value: 'Task5',
+		value: 'Task1',
 		label:
-			'What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?',
+			'What do we know about vaccines and therapeutics? What do we know about vaccines and therapeutics? What has been published concerning research and development and evaluation efforts of vaccines and therapeutics?',
 	};
 
 	useEffect(() => {
@@ -32,6 +32,8 @@ const AppContent = () => {
 
 	const _getSubTasks = (selectedOption) => {
 		setselectedTask(selectedOption);
+		setselectedSubtask({ label: '', value: '' });
+		setresponseData([]);
 		let task = selectedOption.value;
 		let subtasks = taskData.filter((data) => data.value === task);
 		setSubTasks(subtasks[0].subtasks);
@@ -40,6 +42,7 @@ const AppContent = () => {
 	const _getData = (subtask) => {
 		setselectedSubtask(subtask);
 		setShowLoader(true);
+		setresponseData([]);
 		axios({
 			method: 'post',
 			url: 'http://34.223.223.77:4004/search',
@@ -100,7 +103,7 @@ const AppContent = () => {
 							let formattedNameArr = authnameArr.map((dta, index) => {
 								let firstname = dta[1].split('=')[1];
 								let lastname = dta[0].split('=')[1];
-								return firstname + '' + lastname;
+								return firstname + ' ' + lastname;
 							});
 							authorsName = formattedNameArr.join(', ');
 						}

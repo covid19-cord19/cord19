@@ -37,7 +37,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 
-    &--usermgmt {
+    &--links {
         &:before {
             content: '\f013';
         }
@@ -102,6 +102,96 @@ a {
     max-width: 1054px;
 }
 
+/* Bio */
+.bio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+
+
+    &:after {
+        position: absolute;
+        content: "";
+        border-bottom: 2px solid black;
+        margin-top: 160px;
+        width: 98%;
+        line-height: 2px;
+        margin: 160px 0 7px;
+    }
+
+    .bio-details {
+        flex: 1 50%;
+        padding: 10px;
+        line-height: 24px;
+
+        h1 {
+            font-weight: 400;
+            text-transform: inherit;
+            letter-spacing: .075em;
+            text-align: left;
+            font-size: 27px;
+            margin: 0 0 1em;
+            color: #333;
+            max-width: 50%;
+        }
+
+        h3.job-title {
+
+            font-size: 17px;
+            font-weight: 400;
+            color: #333;
+            margin: 5px 0 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #333;
+            line-height: 24px;
+            font-weight: 300;
+        }
+
+
+        @media only screen and (max-width:420px) {
+            flex: 1 100%;
+        }
+    }
+
+    .bio-pic {
+        max-width: 50%;
+        vertical-align: middle;
+        border-style: none;
+
+        @media screen and (max-width:420px) {
+            flex-direction: row-reverse;
+            width: 100%;
+        }
+
+        .wp-post-image {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+    }
+
+    @media only screen and (min-width: 920px) {
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+    }
+
+    @media only screen and (max-width: 420px) {
+        flex-direction: row-reverse;
+        flex: 1 100%;
+    }
+}
+
+
+
+
+
+
+
 
 /* spaces */
 
@@ -115,6 +205,10 @@ a {
 
 .mb-30 {
     margin-bottom: var(--space-30);
+}
+
+.mr-10 {
+    margin-right: var(--space-10);
 }
 
 /******** loader ***************/
