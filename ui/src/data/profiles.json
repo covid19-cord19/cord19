@@ -1,31 +1,31 @@
 [{
-        "name": "Sharad Varshney",
-        "title": "VP, Head of Data Science, Publicis Media-COSMOS",
-        "image": "sharad.jpg",
-        "bio": "Sharad is a Vice President, Head of Data Science for Publicis-COSMOS, based out of San Francisco and has more than 18 years of unique data science cross-domain experience from different industry verticals leveraging Big data.Sharad has researched and designed various marketing based machine learning models ranging from CLV,Churn,Product Propensity, Affinity, Next Arrival, Next Best Action models and have been exceptional in delivering and productionalizing MML models.Prior to joining Publicis, Sharad was Founding member and Chief Data Scientist of Palo Alto based startup, Peritus AI and was instrumental designing the product offering."
-    },
-    {
-        "name": "Guruprasad Ahobalarao",
-        "title": "Senior Director/Engineering Lead at Publicis Sapient",
-        "image": "guru.jpg",
-        "bio": "A Senior Director/Engineering Lead at Publicis Sapient, is dedicated Data Science and Technology Leader with over 28 years of cross - domain, multi - cultural / global experience in administering products / projects, solution design & deployment, steering processes transformation and leading voluminous teams.Strong passion to solve complex business problems and bring together a team to understand and mine data to deliver expected deep insights.Successfully executed several global cross - functional teams to achieve client business goals.Hands on experience in Data Mining, Machine Learning algorithms and Big Data techniques."
-    },
-    {
-        "name": "Jatin Sharma",
-        "title": "",
-        "image": "jatin.jpg",
-        "bio": "Jatin Sharma is a Manager Technology working out of Noida office. He joined Publicis Sapient in July 2010 and has total industry experience of 12 years, helping customers find their way to the best solution and deliver amazing experiences.He is currently working to provide best in class solutions for analytics and data intelligence, all integrated on Azure cloud platform purposely built for a single - customer system of record.In addition, providing cognitive intelligence for big data powered by artificial intelligence and machine - learning algorithms, adoption of DevOps principle, modernizing the stack to embrace API, containers and micro - services."
-    },
-    {
-        "name": "Vinay Kumar Singh",
-        "title": "Senior Associate, Publicis Sapient",
-        "image": "vinay.jpeg",
-        "bio": "Vinay Kumar Singh is a Senior Associate based out of Noida, India and having more than 10 years of experience as fullstack developer handling both frontend and backend of a website or application along with database functionality .He is skilled in Javascript, ReactJs, Redux,NodeJs,ExpressJs, VueJs and databases like MySql & MongoDb. As a fullstack  developer He is responsable for odesign and implmentation of overall web architecture, design & deployment of databases, ensuring the entires stack for speed & scalability, design and construction of REST API , integrating frontend UI with the constructed API and also involve in design & implementation of CI/CD process."
-    },
-    {
-        "name": "Sriya Kuruppath",
-        "title": "",
-        "image": "Sriya.jpg",
-        "bio": "Sriya Kuruppath is a rising senior at Mission San Jose high school in Fremont, California.She has been programming since 2016, when she wrote her first Python program.Since then, she has learned many more programming languages, such as JavaScript, html, and most recently, Java.She was the winner of the California East Bay regional round in the Iridescent’ s Technovation competition in 2018 for building an Android application - MyNadia for natural disaster emergency planning.She is currently enrolled in the computer science courses at UC Berkeley."
-    }
+		"name": "Sharad Varshney",
+		"title": "VP, Head of Data Science, Publicis Media-COSMOS",
+		"image": "sharad.jpg",
+		"bio": "Sharad is a Vice President, Head of Data Science for Publicis-COSMOS, based out of San Francisco and has more than 18 years of unique data science cross-domain experience from different industry verticals leveraging Big data.Sharad has researched and designed various marketing based machine learning models ranging from CLV,Churn,Product Propensity, Affinity, Next Arrival, Next Best Action models and have been exceptional in delivering and productionalizing MML models.Prior to joining Publicis, Sharad was Founding member and Chief Data Scientist of Palo Alto based startup, Peritus AI and was instrumental designing the product offering."
+	},
+	{
+		"name": "Guruprasad Ahobalarao",
+		"title": "Senior Director/Engineering Lead at Publicis Sapient",
+		"image": "guru.jpg",
+		"bio": "A Senior Director/Engineering Lead at Publicis Sapient, is dedicated Data Science and Technology Leader with over 28 years of cross - domain, multi - cultural / global experience in administering products / projects, solution design & deployment, steering processes transformation and leading voluminous teams.Strong passion to solve complex business problems and bring together a team to understand and mine data to deliver expected deep insights.Successfully executed several global cross - functional teams to achieve client business goals.Hands on experience in Data Mining, Machine Learning algorithms and Big Data techniques."
+	},
+	{
+		"name": "Jatin Sharma",
+		"title": "",
+		"image": "jatin.jpg",
+		"bio": "Jatin Sharma is a Manager Technology working out of Noida office. He joined Publicis Sapient in July 2010 and has total industry experience of 12 years, helping customers find their way to the best solution and deliver amazing experiences.He is currently working to provide best in class solutions for analytics and data intelligence, all integrated on Azure cloud platform purposely built for a single - customer system of record.In addition, providing cognitive intelligence for big data powered by artificial intelligence and machine - learning algorithms, adoption of DevOps principle, modernizing the stack to embrace API, containers and micro - services.Before joining Publicis Sapient, Jatin was working with Wipro Technologies.He holds a Bachelor degree in Electronics and Communication and achieved 3rd University rank. He is now pursuing his M.S in Machine Learning and Artificial Intelligence from IIIT Bangalore & LJMU London respectively."
+	},
+	{
+		"name": "Vinay Kumar Singh",
+		"title": "Senior Associate, Publicis Sapient",
+		"image": "vinay.jpeg",
+		"bio": "Vinay Kumar Singh is a Senior Associate based out of Noida, India and having more than 10 years of experience as fullstack developer handling both frontend and backend of a website or application along with database functionality .He is skilled in Javascript, ReactJs, Redux,NodeJs,ExpressJs, VueJs and databases like MySql & MongoDb. As a fullstack  developer He is responsable for odesign and implmentation of overall web architecture, design & deployment of databases, ensuring the entires stack for speed & scalability, design and construction of REST API , integrating frontend UI with the constructed API and also involve in design & implementation of CI/CD process."
+	},
+	{
+		"name": "Sriya Kuruppath",
+		"title": "",
+		"image": "Sriya.jpg",
+		"bio": "Sriya Kuruppath is a rising senior at Mission San Jose high school in Fremont, California.She has been programming since 2016, when she wrote her first Python program.Since then, she has learned many more programming languages, such as JavaScript, html, and most recently, Java.She was the winner of the California East Bay regional round in the Iridescent’ s Technovation competition in 2018 for building an Android application - MyNadia for natural disaster emergency planning.She is currently enrolled in the computer science courses at UC Berkeley."
+	}
 ]
